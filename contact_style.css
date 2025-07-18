@@ -1,0 +1,170 @@
+/* contact_style.css */
+
+/* フォームセクションの一般的な調整 */
+.contact-form-section {
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    max-width: 700px;
+    margin: 30px auto; /* 中央寄せ */
+}
+
+.contact-form-section h2 {
+    color: #34495e;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.8em;
+}
+
+.contact-form-section p {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* 必須マークのスタイル */
+.input-group .required {
+    color: #e74c3c; /* 赤色 */
+    margin-left: 5px;
+    font-size: 0.9em;
+}
+
+/* 入力グループのスタイル */
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #444;
+    font-size: 1em;
+}
+
+.input-group input[type="text"],
+.input-group input[type="email"],
+.input-group textarea,
+.input-group select { /* ここにselectを追加 */
+    width: calc(100% - 24px); /* パディングとボーダーを考慮 */
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1em;
+    box-sizing: border-box; /* パディングを含めて幅を計算 */
+    transition: border-color 0.3s ease;
+    /* selectのデフォルトスタイルをリセットし、カスタム矢印を適用 */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20256%20512%22%3E%3Cpath%20fill%3D%22%23444%22%20d%3D%22M208%20256c0%2014.2-7.2%2027.6-18.7%2035.3L64%20420c-15.6%2010.5-38.6%206.5-49.1-9.1s-6.5-38.6%209.1-49.1L146.3%20256%2023.1%20109.1c-15.6-10.5-19.6-33.5-9.1-49.1s33.5-19.6%2049.1-9.1L189.3%20220.7C200.8%20228.4%20208%20241.8%20208%20256z%22%2F%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 10px;
+    padding-right: 30px; /* 矢印分のスペースを確保 */
+}
+
+.input-group input[type="text"]:focus,
+.input-group input[type="email"]:focus,
+.input-group textarea:focus,
+.input-group select:focus { /* ここにselectを追加 */
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+}
+
+.input-group textarea {
+    resize: vertical; /* 垂直方向のみリサイズ可能 */
+    min-height: 120px;
+}
+
+/* チェックボックスのグループ */
+.input-group.checkbox-group {
+    display: flex; /* Flexboxを使用して配置 */
+    align-items: center; /* 項目を垂直方向の中央に配置 */
+    margin-top: 15px;
+    margin-bottom: 10px; /* チェックボックス間の間隔を調整 */
+}
+
+.input-group.checkbox-group:last-of-type {
+    margin-bottom: 25px; /* 最後のチェックボックスとボタンのグループの間にさらにスペースを追加 */
+}
+
+.input-group.checkbox-group input[type="checkbox"] {
+    margin-right: 10px; /* チェックボックスとラベルの間のスペース */
+    transform: scale(1.1); /* チェックボックスを少し大きくする */
+    flex-shrink: 0; /* チェックボックスが縮小しないようにする */
+}
+
+.input-group.checkbox-group label {
+    display: inline-flex; /* コンテンツが折り返せるようにinline-flexを使用 */
+    align-items: center; /* ラベル内のコンテンツを垂直方向の中央に配置 */
+    margin-bottom: 0; /* デフォルトのラベルマージンを削除 */
+    font-weight: normal; /* チェックボックスのラベルは通常太字ではない */
+    color: #444; /* 他のテキストの色に合わせる */
+}
+
+.agreement-link {
+    color: #3498db; /* リンクの色を青に */
+    text-decoration: underline; /* リンクに下線 */
+    margin: 0 3px; /* リンクテキストの周りに小さなスペース */
+}
+
+.agreement-link:hover {
+    color: #2980b9;
+    text-decoration: none; /* ホバー時に下線をなくして控えめな効果 */
+}
+
+/* ボタンのグループ */
+.button-group {
+    text-align: center;
+    margin-top: 30px; /* 必要に応じて調整 */
+}
+
+/* 送信ボタンのスタイル */
+.submit-button {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #2980b9;
+}
+
+/* 送信後のメッセージ */
+.message {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.message.success {
+    background-color: #d4edda;
+    color: #28a745;
+    border: 1px solid #c3e6cb;
+}
+
+.message.error {
+    background-color: #f8d7da;
+    color: #dc3545;
+    border: 1px solid #f5c6cb;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+    .contact-form-section {
+        margin: 20px 15px; /* スマホでは左右のマージンを少し小さく */
+        padding: 20px;
+    }
+}

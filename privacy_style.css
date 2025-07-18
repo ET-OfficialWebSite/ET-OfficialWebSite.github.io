@@ -1,0 +1,76 @@
+/* terms_style.css */
+
+/* フォームセクションのスタイルを流用 */
+.terms-section {
+    padding: 30px 40px; /* 内側の余白を少し調整 */
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    max-width: 800px; /* 横幅を少し広げる */
+    margin: 30px auto;
+}
+
+.terms-section h2 {
+    color: #34495e;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.8em;
+}
+
+/* 利用規約コンテンツのスタイル */
+.terms-content {
+    margin-top: 20px;
+}
+
+.terms-content h3 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 8px;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    font-size: 1.4em;
+}
+
+.terms-content p,
+.terms-content ul {
+    color: #555;
+    line-height: 1.8; /* 行間を広めに */
+    text-align: left;
+}
+
+.terms-content ul {
+    list-style-type: disc;
+    padding-left: 25px;
+    margin-bottom: 20px;
+}
+
+.terms-content li {
+    margin-bottom: 12px;
+}
+
+.terms-content strong {
+    color: #e74c3c; /* 強調したい部分を赤色に */
+}
+
+.terms-content .last-updated {
+    text-align: right;
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #777;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+    .terms-section {
+        margin: 20px 15px;
+        padding: 20px;
+    }
+
+    .terms-section h2 {
+        font-size: 1.5em;
+    }
+
+    .terms-content h3 {
+        font-size: 1.2em;
+    }
+}
